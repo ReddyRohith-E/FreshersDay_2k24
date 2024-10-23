@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Tooplate">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <title>SWAGATH 2024</title>
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.1jKYYEek_zBYfOPhVsfe1gHaHa?rs=1&pid=ImgDetMain"
+        type="image/x-icon">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .footer {
+            background-color: var(--second-color);
+            color: #a74242;
+            text-align: center;
+            font-weight: var(--font-semi);
+            padding: 3.5rem 0;
+        }
+
+        .footer-title {
+            font-size: 2rem;
+            margin-bottom: var(--mb-4);
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: var(--mb-4);
+        }
+
+        .social-item {
+            text-align: center;
+            margin: 0 var(--mb-2);
+        }
+
+        .skills-icon {
+            width: 10%;
+            /* Adjust according to your preference */
+        }
+
+        .social-name {
+            font-size: 1rem;
+            color: #041b78;
+        }
+
+        .ashv {
+            width: 400px;
+            height: auto;
+        }
+
+        .mits {
+            width: 80px;
+            height: auto;
+        }
+
+        #b {
+            font-weight: 900;
+        }
+
+        .up-arrow {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .up-arrow:hover {
+            color: #ddcccc;
+        }
+
+
+
+        .main-nav .nav {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* Center the navigation items */
+        }
+
+
+        .main-nav .nav li:last-child {
+            margin-right: 0;
+        }
+
+        .main-nav .nav li a {
+            color: #333;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            display: inline-block;
+        }
+
+        .main-nav .nav li a:hover {
+            color: #ff6b6b;
+            
+        }
+
+        .main-nav .nav li {
+            display: inline-block;
+        }
+
+        .main-nav img {
+            position: absolute !important;
+        }
+
+        #imgOne {
+            left: 3rem;
+            top: 0.5rem !important;
+            margin-top: 0 !important;
+            width: auto;
+            height: 4rem;
+            margin-top: .5rem;
+        }
+
+        #imgTwo {
+            left: 13rem;
+            top: 0.5rem !important;
+            margin-top: 0 !important;
+            width: auto;
+            height: 4rem;
+            margin-top: 0.5rem;
+        }
+
+        @media screen and (max-width:768px) {
+            .main-nav img {
+                position: absolute;
+            }
+
+            #imgOne {
+                left: 1rem;
+                top: 1rem;
+                margin-top: 0;
+            }
+
+            #imgTwo {
+                left: 12rem;
+            }
+        }
+
+        .footer {
+            background-color: var(--second-color);
+            color: #a74242;
+            text-align: center;
+            font-weight: var(--font-semi);
+            padding: 3.5rem 0;
+        }
+
+        .footer-title {
+            font-size: 2rem;
+            margin-bottom: var(--mb-4);
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: var(--mb-4);
+        }
+
+        .social-item {
+            text-align: center;
+            margin: 0 var(--mb-2);
+        }
+
+        .skills-icon {
+            width: 10%;
+            /* Adjust according to your preference */
+        }
+
+        .social-name {
+            font-size: 1rem;
+            color: #041b78;
+        }
+
+        .ashv {
+            width: 400px;
+            height: auto;
+        }
+
+        .mits {
+            width: 80px;
+            height: auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        @media screen and (max-width:768px) {
+            .logo-container {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 10px;
+            }
+
+            .logo-container img {
+                margin-right: 10px;
+            }
+
+            .poster {
+                width: 300px;
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .logo-container {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 10px;
+            }
+
+            .logo-container img {
+                margin-right: 10px;
+            }
+
+            .footer-social {
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .skills-icon {
+                width: 35%;
+
+            }
+
+            .social-item {
+                margin: 0;
+                margin-bottom: 0;
+            }
+
+            #phone-footer {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+
+            .social-item span {
+                display: none;
+            }
+        }
+
+        .event-date {
+            color: whitesmoke;
+            text-shadow: 3px 3px 4px black;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .event-date {
+                font-size: 1.5rem; /* Adjust font size for mobile */
+            }
+        }
+
+        .events-timeline {
+            background-color: var(--background-color, #f4f4f9);
+            padding: 50px 0;
+        }
+
+        .events-timeline .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--primary-color, #333);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary-color, #333);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 4px solid var(--primary-color, #333);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item::after {
+            left: -10px;
+            top: 35%;
+        }
+
+        .timeline-item .timeline-date {
+            padding: 10px;
+            background-color: var(--primary-color, #333);
+            color: white;
+            width: 120px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .timeline-item .timeline-date {
+            right: calc(100% + 20px);
+        }
+
+        .timeline-item .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        .timeline-item .timeline-content h4 {
+            margin-top: 0;
+            color: var(--primary-color, #333);
+        }
+
+        .timeline-item .timeline-content p {
+            margin: 0;
+            color: var(--primary-color, #333);
+        }
+
+        /* Basic structure for the timeline */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #656c74;
+            top: 0;
+            bottom: 0;
+            left: 50px;
+            /* Position the timeline line on the left */
+            margin-left: 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: calc(100% - 50px);
+            margin-left: 50px;
+        }
+
+        .timeline-time {
+            flex: 0 0 150px;
+            text-align: right;
+            padding-right: 20px;
+            font-weight: bold;
+        }
+
+        .timeline-content {
+            flex: 1;
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        .timeline-date {
+            height: auto;
+        }
+
+        /* Media queries for smaller screens */
+
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 10px;
+            }
+
+            .timeline-item {
+                width: 80%;
+                flex-direction: column;
+                justify-content: baseline;
+                align-items: baseline;
+                padding-right: 25px;
+                padding-left: 0;
+            }
+
+            .timeline-content {
+                width: 100%;
+            }
+
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+
+            .timeline-item::after {
+                left: -50px;
+                top: 12%;
+            }
+
+            .timeline-item .timeline-date {
+                width: 100%;
+                text-align: left;
+                height: 100%;
+            }
+        }
+
+        .counter-content {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+            margin-inline: auto;
+            padding: 12px 0px;
+            z-index: 10;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .counter-content ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .counter-content li {
+            margin: 0 10px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            height: 55px;
+        }
+
+        .counter-content .timespan {
+            display: block;
+            font-size: 1rem;
+            background-color: black;
+            z-index: 20;
+        }
+
+        .counter-content span {
+            display: block;
+            font-size: 24px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--primary-color, #333);
+        }
+
+        .event-item {
+            margin-bottom: 30px;
+        }
+
+        .event-item .thumb img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .event-item .down-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .event-item .down-content h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-color, #333);
+        }
+
+        .event-item .down-content p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1000;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .teaser {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 50vw;
+            margin-inline: auto;
+        }
+
+        .teaser video {
+
+            padding-top: 2rem;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .teaser {
+                width: 100vw;
+            }
+        }
+
+        .rl-loading-container {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(32, 29, 29);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .rl-loading-thumb {
+            width: 15px;
+            height: 50px;
+            background-color: #41f3fd;
+            margin: 4px;
+            box-shadow: 0 0 12px 3px #0882ff;
+            animation: rl-loading 1.5s ease-in-out infinite;
+            border-radius: 5px;
+        }
+
+        .rl-loading-thumb-1 {
+            animation-delay: 0s;
+        }
+
+        .rl-loading-thumb-2 {
+            animation-delay: 0.5s;
+        }
+
+        .rl-loading-thumb-3 {
+            animation-delay: 1s;
+        }
+
+        @keyframes rl-loading {
+            0% {}
+
+            20% {
+                background: white;
+                transform: scale(1.5);
+            }
+
+            40% {
+                background: #41f3fd;
+                transform: scale(1);
+            }
+        }
+        .buttons{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            
+        }
+        .buttons a{
+            background-color: #00000072;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .created-by {
+        position: absolute;
+        bottom: 2rem;
+        text-align: center;
+    }
+
+    .created-by p {
+        margin: 0;
+        font-size: 1rem;
+        color: white;
+    }
+
+    .creator-logo {
+        width: 70px;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 50%;
+    }
+    @media screen and (max-width: 768px) {
+        .created-by {
+           bottom: 8rem;
+        }
+        .creator-logo{
+            width: 40px;
+
+        }
+        
+    }
+    .thumb{
+        height: 200px;
+        overflow: hidden;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="rl-loading-container">
+        <div class="rl-loading-thumb rl-loading-thumb-1"></div>
+        <div class="rl-loading-thumb rl-loading-thumb-2"></div>
+        <div class="rl-loading-thumb rl-loading-thumb-3"></div>
+        <div class="created-by">
+            <p>Created by</p>
+            <img src="assets/images/webclub.jpg" alt="Webclub" class="creator-logo">
+        </div>
+    </div>
+
+
+    <!-- Event Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Event Title</h2>
+            <br>
+            <p id="modalDescription">Event Description</p>
+            <br>
+
+            <strong id="eventCoordinator"></strong>
+            <br>
+            <span id="eventVenue"><strong>Venue:</strong> Updated Soon</span>
+            <strong id="contactNumber"></strong>
+            <br>
+
+            <a id="eventLink" href="" target="_blank">Register Now!!</a>
+        </div>
+    </div>
+    <!-- ***** Header Area Start ***** -->
+    <section id="nav">
+        <header class="header-area header-sticky">
+            <div class="contain">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- ***** Logo Start ***** -->
+                            <img id="imgOne" src="./assets/images/mits.png" alt="logo">
+                            <img id="imgTwo" src="./assets//images//SAC.jpg" style="margin-left: 3rem;">
+                            <!-- ***** Logo End ***** -->
+                            <!-- ***** Menu Start ***** -->
+                            <ul class="nav">
+                                <li class="non-tech"><a href="index.html" id="b">Home</a></li>
+                                <li><a href="#aboutUs">About Us</a></li>
+                                <li><a href="#technical">Technical Events</a></li>
+                                <li><a href="#cultural">Culturals</a></li>
+                                <li><a href="#sports">Sports</a></li>
+                                <li><a href="#contact">Contact us</a></li>
+                            </ul>
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner">
+        <div class="counter-content">
+            <ul>
+                <li style="text-shadow: 3px 3px 4px black;">
+                    <div class="timespan">Days</div>
+                    <span><span id="days" style="text-shadow: 3px 3px 4px black;">0</span></span>
+                </li>
+                <li style="text-shadow: 3px 3px 4px black;">
+                    <div class="timespan">Hours</div>
+                    <span><span id="hours" style="text-shadow: 3px 3px 4px black;">0</span></span>
+                </li>
+                <li style="text-shadow: 3px 3px 4px black;">
+                    <div class="timespan">Minutes</div>
+                    <span><span id="minutes" style="text-shadow: 3px 3px 4px black;">0</span></span>
+                </li>
+                <li style="text-shadow: 3px 3px 4px black;">
+                    <div class="timespan">Seconds</div>
+                    <span><span id="seconds" style="text-shadow: 3px 3px 4px black;">0</span></span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-content">
+                        <!-- <img src="assets/images/home.png" alt="home" class="responsive-img"> -->
+                        <h2 style="text-shadow: 3px 3px 4px black; justify-self: center;">SWAGATH 2024</h2>
+                        <h3 class="event-date">8<sup>th</sup> Nov 2024</h3><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-12 buttons">
+                    <a href="#technical">Technical</a>
+                    <a href="#cultural">Cultural</a>
+                    <a href="#sports">Sports</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+    <div class="teaser">
+        <video src="./assets/images/teaser.mp4" autoplay muted loop controls></video>
+    </div>
+
+    <!-- *** Events Timeline *** -->
+    <div class="events-timeline">
+        <div class="container">
+            <h2 class="section-title">Events Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">3:00 PM</div>
+                    <div class="timeline-content">
+                        <h4>Opening Ceremony</h4>
+                        <p>Welcome speech and introduction to the event.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">3:30 PM</div>
+                    <div class="timeline-content">
+                        <h4>Addressing</h4>
+                        <p>Degnitaries address the gathering.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">4:15 PM</div>
+                    <div class="timeline-content">
+                        <h4>Prize distribution</h4>
+                        <p>Winners and Participants avail prizes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">5:00 PM</div>
+                    <div class="timeline-content">
+                        <h4>Cultural Events</h4>
+                        <p>Dance, music, and drama performances.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">8:00 PM</div>
+                    <div class="timeline-content">
+                        <h4>Closing Ceremony</h4>
+                        <p>Award distribution and closing remarks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *** Technical Events Section *** -->
+    <div class="technical-events" id="technical">
+        <div class="container">
+            <h2 class="section-title">Technical Events</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="event-item" data-title="MITS Trivia"
+                    data-description="Quiz on your experiences in MITS"
+                    data-image="assets/images/ideathon.jpg" data-link="https://forms.gle/Hi9sekT2mHrbdPA89">
+                        <div class="thumb">
+                            <img src="assets/images/quiz.jpg" alt="Tech Event 1">
+                        </div>
+                        <div class="down-content">
+                            <h4>MITS Trivia</h4>
+                            <p>Quiz on your experiences in MITS</p>
+                            <br>
+                            <a href="https://forms.gle/Hi9sekT2mHrbdPA89" target="_blank">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *** Cultural Events Section *** -->
+    <div class="cultural-events" id="cultural">
+        <div class="container">
+            <h2 class="section-title">Cultural Events</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                        <div class="event-item" data-title="Beat Bash"
+                            data-description="Show off your dance moves in this exciting competition."
+                            data-image="assets/images/dancewance.jpg" data-link="https://forms.gle/vcVCRH8tCHYWcZDM6">
+                            <div class="thumb">
+                                <img src="assets/images/dancewance.jpg" alt="Cultural Event 1">
+                            </div>
+                            <div class="down-content">
+                                <h4>Beat Bash</h4>
+                                <p>Show off your dance moves in this exciting competition.</p>
+                                <br>
+                                <a href="https://forms.gle/vcVCRH8tCHYWcZDM6">Register Now</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                        <div class="event-item" data-title="Melody Madness"
+                        data-description="Enjoy live performances by various artists."
+                        data-image="assets/images/larynx.jpg" data-link="https://forms.gle/mmWgBW5ZoW1wtzSk7">
+                            <div class="thumb"><img src="assets/images/larynx.jpg" alt="Cultural Event 2">
+                            </div>
+                            <div class="down-content">
+                                <h4>Melody Madness</h4>
+                                <p>Enjoy live performances by various
+                                    artists.</p>
+                                    <br>
+                                <a href="https://forms.gle/mmWgBW5ZoW1wtzSk7">Register Now</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                        <div class="event-item" data-title="Drama Delites"
+                        data-description="Watch captivating plays performed by
+                        talented actors."
+                        data-image="assets/images/theatre2.jpg" data-link="https://forms.gle/itSHbBLaPdje8oLo8">
+                            <div class="thumb">
+                                <img src="assets/images/theatre2.jpg" alt="Cultural Event 3">
+                            </div>
+                            <div class="down-content">
+                                <h4>Drama Delites</h4>
+                                <p>Watch captivating plays performed by
+                                    talented actors.</p>
+                                    <br>
+                                <a href="https://forms.gle/itSHbBLaPdje8oLo8">Register Now</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    
+                        <div class="event-item" data-title="Fashion Fanatics"
+                        data-description="Watch captivating plays performed by
+                        talented actors."
+                        data-image="assets/images/fashion.jpg" data-link="https://forms.gle/RGapXDjPrhPA11Ae8">
+                            <div class="thumb">
+                                <img src="assets/images/fashion.jpg" alt="Cultural Event 3">
+                            </div>
+                            <div class="down-content">
+                                <h4>Fashion Fanatics</h4>
+                                <p>Watch captivating plays performed by
+                                    talented actors.</p>
+                                    <br>
+                                <a href="https://forms.gle/RGapXDjPrhPA11Ae8">Register Now</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="event-item" data-title="Artistry"
+                    data-description="Watch captivating plays performed by talented actors."
+                    data-image="assets/images/art.jpg" data-link="https://docs.google.com/forms/d/e/1FAIpQLSdEtusspdqmLuA6J1tx5ylFX6G6t0heNtw5VHzPiwHgJv6xbA/viewform">
+                        <div class="thumb">
+                            <img src="assets/images/art.jpg" alt="Cultural Event 3">
+                        </div>
+                        <div class="down-content">
+                            <h4>Artistry</h4>
+                            <p>Watch captivating plays performed by talented actors.</p>
+                            <br>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEtusspdqmLuA6J1tx5ylFX6G6t0heNtw5VHzPiwHgJv6xbA/viewform">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="event-item" data-title="InstaFlick"
+                    data-description="Watch captivating plays performed by talented actors."
+                    data-image="assets/images/art.jpg" data-link="#">
+                        <div class="thumb">
+                            <img src="assets/images/instaflx.jpg" alt="Cultural Event 3">
+                        </div>
+                        <div class="down-content">
+                            <h4>Insta Flick</h4>
+                            <p>Watch captivating plays performed by talented actors.</p>
+                            <br>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEtusspdqmLuA6J1tx5ylFX6G6t0heNtw5VHzPiwHgJv6xbA/viewform">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *** Sports Events Section *** -->
+    <div class="sports-events" id="sports">
+        <div class="container">
+            <h2 class="section-title">Sports Events</h2>
+            <!-- <p class="text-center">Coming Soon</p> -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="event-item" data-title="Cricket (Girls)"
+                    data-description="Compete in a thrilling Cricket tournament." data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
+                        <div class="thumb">
+                            <a href=" "><img src="assets/images/cricket.jpg" alt="Sports Event 1"></a>
+                        </div>
+                        <div class="down-content">
+                                <h4>Cricket (Girls)</h4>
+                            <p>Compete in a thrilling Cricket tournament.</p>
+                            <br>
+                                <a href="https://forms.gle/C4T1vBLUjX7cQXyH9">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="event-item" data-title="Throw Ball (Girls)"
+                    data-description="Compete in a thrilling throwball tournament." data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
+                        <div class="thumb">
+                            <a href=" "><img src="assets/images/throwball.jpg" alt="Sports Event 1"></a>
+                        </div>
+                        <div class="down-content">
+                                <h4>Throw ball (Girls)</h4>
+                            <p>Compete in a thrilling throwball tournament.</p>
+                            <br>
+                                <a href="https://forms.gle/C4T1vBLUjX7cQXyH9">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="event-item"  data-title="Volley Ball (Boys)"
+                    data-description="Compete in a thrilling volleyball tournament." data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
+                        <div class="thumb">
+                            <a href=" "><img src="assets/images/volleyball.jpg" alt="Sports Event 1"></a>
+                        </div>
+                        <div class="down-content">
+                                <h4>Volley Ball (Boys)</h4>
+                            <p>Compete in a thrilling volleyball tournament.</p>
+                            <br>
+                                <a href="https://forms.gle/C4T1vBLUjX7cQXyH9">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="event-item" data-title="Hand Ball (Boys)"
+                    data-description="Compete in a thrilling Handball tournament." data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
+                        <div class="thumb">
+                            <a href=" "><img src="assets/images/handball.jpg" alt="Sports Event 1"></a>
+                        </div>
+                        <div class="down-content">
+                                <h4>Hand Ball (Boys)</h4>
+                            <p>Compete in a thrilling handball tournament.</p>
+                            <br>
+                                <a href="https://forms.gle/C4T1vBLUjX7cQXyH9">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- *** Owl Carousel Items ***-->
+    <div class="show-events-carousel">
+        <h2 class="section-title" style="padding: 1rem;">Gallery</h2>
+        <div class="container" style="margin-top: 9%;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-show-events owl-carousel">
+                        <div class="item">
+                            <a href=" "><img src="assets/images/prev_freshers/DSC_3051.JPG" alt="image 1"></a>
+                        </div>
+                        <div class="item">
+                            <a href=" "><img src="assets/images/prev_freshers/DSC_3095.JPG" alt="image 2"></a>
+                        </div>
+                        <div class="item">
+                            <a href=" "><img src="assets/images/prev_freshers/DSC_3140.JPG" alt="image 3"></a>
+                        </div>
+                        <div class="item">
+                            <a href=" "><img src="assets/images/prev_freshers/DSC_3151.JPG" alt="image 4"></a>
+                        </div>
+                        <div class="item">
+                            <a href=" "><img src="assets/images/prev_freshers/DSC_3269.JPG" alt="image 5"></a>
+                        </div>
+                        <div class="item">
+                            <a href=" "><img src="assets/images/prev_freshers/DSC_3275.JPG" alt="image 6"></a>
+                        </div>
+                        <div class="item">
+                            <a href=" "><img src="assets/images/prev_freshers/DSC_3330.JPG" alt="image 7"></a>
+                        </div>
+                        <div class="item">
+                            <a href=" "><img src="assets/images/prev_freshers/DSC_3356.JPG" alt="image 8"></a>
+                        </div>
+                        <div class="item">
+                            <a href=" "><img src="assets/images/prev_freshers/DSC_3395.JPG" alt="image 9"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *** Amazing Venus ***-->
+    <div class="amazing-venues" id="aboutUs">
+        <div class="container" style="background-color: rgba(0,0,0,0.082); padding: 5%;">
+            <!-- <center><img src="assets/images/ashv.jpg" class="poster"></center><br><br> -->
+            <div class="row">
+                <div class="col-lg">
+                    <div class="left-content">
+                        <h4>About SWAGATH 2024</h4>
+                        <p style="font-weight: bold; color: rgb(12, 106, 117);">Ignite the Spark</p>
+                        <p style="text-align: justify;">Welcome to SWAGATH 2024, an event designed to ignite the spark
+                            of excitement and camaraderie among the newest members of our academic community. This day
+                            is dedicated to celebrating the arrival of our SWAGATH, providing them with a memorable
+                            introduction to the vibrant life that awaits them on campus.
+
+                            SWAGATH 2024 is more than just an event; it is a tradition that marks the beginning of an
+                            incredible journey. Our goal is to create an environment where new students can feel
+                            welcomed, make new friends, and start building connections that will last a lifetime. The
+                            day is packed with a variety of activities that cater to diverse interests, ensuring that
+                            there is something for everyone.
+
+                            The event kicks off with a grand opening ceremony, featuring inspiring speeches from
+                            esteemed faculty members and senior students. This is followed by a series of ice-breaking
+                            sessions designed to help SWAGATH get to know each other in a fun and relaxed setting. These
+                            activities are not only enjoyable but also serve as a great way to ease the transition into
+                            university life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *** Footer *** -->
+    <footer class="footer section" id="contact"><br><br><br>
+        <hr>
+        <h2 class="section-title">Get in Touch!</h2><br>
+        <!-- <p class="footer-title"></p><br><br> -->
+        <div class="footer-social">
+            <div class="social-item">
+                <a href="https://www.instagram.com/mits.sac" target="_blank">
+                    <img class="skills-icon" src="../assets/images/insta.jpg" alt="Instagram" />
+                    <span class="social-name">Instagram</span>
+                </a>
+            </div>
+            <!-- <div class="social-item">
+                <a href="https://www.linkedin.com/events/ashv-theraceoftalent7179117847011319808/" target="_blank">
+                    <img class="skills-icon" src="../assets/images/linkedin.webp" alt="Twitter" />
+                    <span class="social-name">Linkedin&nbsp;&nbsp;</span>
+                </a>
+            </div> -->
+            <div class="social-item">
+                <a href="tel:7670822609" target="_blank">
+                    <img class="skills-icon" src="../assets/images/phone.jpg" alt="Phone" />
+                    <span class="social-name">Phone&nbsp;&nbsp;&nbsp;</span>
+                </a>
+            </div>
+            <!-- <div class="social-item">
+                <a href="https://fb.me/e/wH5oN1IyV" target="_blank">
+                    <img class="skills-icon" src="../assets/images/facebook.jpg" alt="Facebook" />
+                    <span class="social-name">Facebook</span>
+                </a>
+            </div><br> -->
+            <div class="social-item">
+                <a href="mailto:sac@mits.ac.in" target="_blank">
+                    <img class="skills-icon" src="../assets/images/mail.png" alt="Email" />
+                    <span class="social-name">Email</span>
+                </a>
+            </div><br>
+            <div class="social-item">
+                <a href="https://wa.me/7670822609" target="_blank">
+                    <img class="skills-icon" src="../assets/images/whatsapp.jpg" alt="whatsapp" />
+                    <span class="social-name">whatsapp</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="arrow">
+        <a href="#nav" class="up-arrow"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("eventModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Get all event items
+        var eventItems = document.querySelectorAll(".event-item");
+
+        // Loop through event items to add click event
+        eventItems.forEach(function (item) {
+            item.addEventListener("click", function () {
+                var title = this.querySelector("h4").innerText;
+                var description = this.querySelector("p").innerText;
+
+                // Set the modal content
+                document.getElementById("modalTitle").innerText = title;
+                document.getElementById("modalDescription").innerText = description;
+
+                // Display the modal
+                modal.style.display = "block";
+            });
+        });
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let lastScrollTop = 0;
+            const counterContent = document.querySelector('.counter-content');
+
+            window.addEventListener('scroll', function () {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    counterContent.style.transform = 'translate(-50%, 100%)';
+                } else {
+                    // Scrolling up
+                    counterContent.style.transform = 'translate(-50%, 0)';
+                }
+                lastScrollTop = scrollTop;
+            });
+
+            // Function to update counter values with smooth scroll effect
+            function updateCounter(id, value) {
+                const element = document.getElementById(id);
+                if (!element) return; // Add null check
+
+                const currentValue = parseInt(element.textContent, 10);
+                if (currentValue !== value) {
+                    const newElement = document.createElement('span');
+                    newElement.id = id;
+                    newElement.textContent = value;
+                    newElement.style.animation = 'slideDown 0.3s forwards';
+                    newElement.style.position = 'absolute';
+                    // newElement.style.top = '100%';
+                    newElement.style.width = '100%';
+                    newElement.style.textAlign = 'center';
+                    element.parentNode.appendChild(newElement);
+
+                    element.style.animation = 'slideUp 0.3s forwards';
+
+                    setTimeout(() => {
+                        element.remove();
+                    }, 300);
+                }
+            }
+
+            // Function to calculate the countdown
+            function calculateCountdown() {
+                const now = new Date();
+                const eventDate = new Date('2024-11-08T00:00:00'); // Correct event date
+                const diff = eventDate - now;
+
+                if (diff < 0) {
+                    // Event has passed
+                    updateCounter('days', 0);
+                    updateCounter('hours', 0);
+                    updateCounter('minutes', 0);
+                    updateCounter('seconds', 0);
+                    return;
+                }
+
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                updateCounter('days', days);
+                updateCounter('hours', hours);
+                updateCounter('minutes', minutes);
+                updateCounter('seconds', seconds);
+            }
+
+            // Initial call to set the counter values
+            calculateCountdown();
+
+            // Update the counter every second
+            setInterval(calculateCountdown, 1000);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // $('#eventModal').on('show.bs.modal', function (event) {
+            //     var button = $(event.relatedTarget); // Button that triggered the modal
+            //     var title = button.data('title'); // Extract info from data-* attributes
+            //     var description = button.data('description');
+            //     var link = button.data('link');
+            //     console.log("Hello");
+            //     var image = button.data('image');
+
+            //     var modal = $(this);
+            //     // modal.find('.modal-title').text(title);
+            //     // modal.find('#eventDescription').text(description);
+            //     // modal.find('#eventLink').attr('href', link);
+            //     // modal.find('#eventImage').attr('src', image);
+            // });
+        });
+    </script>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var preloader = document.querySelector('.rl-loading-container');
+                preloader.style.display = 'none';
+            }, 1000);
+        });
+        document.querySelectorAll(".event-item").forEach(function (item) {
+            item.addEventListener("click", function () {
+                console.log(this);
+                var title = this.dataset.title;
+                var description = this.dataset.description;
+                var link = this.dataset.link;
+                console.log(title, description, link);
+
+                var modal = document.getElementById("eventModal");
+                var modalTitle = document.getElementById("modalTitle");
+                var modalDescription = document.getElementById("modalDescription");
+                var modalLink = document.getElementById("eventLink");
+                var eventCoordinator = document.getElementById("eventCoordinator");
+                var contactNumber = document.getElementById("contactNumber");
+
+                modalTitle.innerText = title;
+                modalDescription.innerText = description;
+                modalLink.href = link;
+                // eventCoordinator.innerText = "Event Coordinator: V. Harsha Vardhan";
+                contactNumber.innerHTML = "Contact Number: <a href='tel:7670822609'>7670822609</a>";
+            });
+        });
+        document.querySelectorAll('a').forEach((item)=>{
+            item.target="_blank";
+        })
+    </script>
+</body>
+</html>
