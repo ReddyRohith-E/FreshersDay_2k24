@@ -12,8 +12,7 @@
         rel="stylesheet">
 
     <title>SWAGATH 2024</title>
-    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.1jKYYEek_zBYfOPhVsfe1gHaHa?rs=1&pid=ImgDetMain"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/mits_logo.jpg" type="image/x-icon">
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -69,7 +68,7 @@
             color: #041b78;
         }
 
-        .ashv {
+        .freshers {
             width: 400px;
             height: auto;
         }
@@ -77,10 +76,6 @@
         .mits {
             width: 80px;
             height: auto;
-        }
-
-        #b {
-            font-weight: 900;
         }
 
         .up-arrow {
@@ -103,8 +98,6 @@
             color: #ddcccc;
         }
 
-
-
         .main-nav .nav {
             margin: 0;
             padding: 0;
@@ -121,6 +114,7 @@
             color: #333;
             text-transform: uppercase;
             font-weight: bold;
+            font-size: 18px;
             transition: color 0.3s ease;
             display: inline-block;
         }
@@ -134,9 +128,33 @@
             display: inline-block;
         }
 
-        .main-nav img {
-            position: absolute !important;
+        .main-nav {
+            /* position: absolute !important; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
+
+        .main-nav .left-nav{
+            display: flex;
+            align-items: center;
+            font-family: 'Impact Regular';
+        }
+
+        .main-nav .left-nav img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+
+        @media (max-width: 768px) {
+            .left-nav img {
+                width: 30px; /* Adjust the size as needed */
+                margin-right: 5px; /* Adjust the margin as needed */
+            }
+        }
+
 
         #imgOne {
             left: 3rem;
@@ -154,22 +172,6 @@
             width: auto;
             height: 4rem;
             margin-top: 0.5rem;
-        }
-
-        @media screen and (max-width:768px) {
-            .main-nav img {
-                position: absolute;
-            }
-
-            #imgOne {
-                left: 1rem;
-                top: 1rem;
-                margin-top: 0;
-            }
-
-            #imgTwo {
-                left: 12rem;
-            }
         }
 
         .footer {
@@ -206,7 +208,7 @@
             color: #041b78;
         }
 
-        .ashv {
+        .freshers {
             width: 400px;
             height: auto;
         }
@@ -219,6 +221,11 @@
         .logo-container {
             display: flex;
             align-items: center;
+        }
+
+        .logo-container img {
+            width: 50px;
+            height: auto;
         }
 
         @media screen and (max-width:768px) {
@@ -612,6 +619,18 @@
             cursor: pointer;
         }
 
+        .sac img {
+            width: auto;
+            max-width: 75px;
+            max-height: 75px;
+            border-radius: 50%;
+        }
+            
+            .sac{
+                margin-top: 0;
+                margin-bottom: auto;
+            }
+
         .teaser {
             display: flex;
             align-items: center;
@@ -629,6 +648,41 @@
 
         @media screen and (max-width: 768px) {
             .teaser {
+                width: 100vw;
+            }
+        }
+        
+        .poster {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 50vw;
+            margin-inline: auto;
+            padding: 2rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .poster .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color, #333);
+        }
+        
+        .poster img {
+            padding-top: 1rem;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .poster {
                 width: 100vw;
             }
         }
@@ -733,7 +787,7 @@
             height: 200px;
             overflow: hidden;
         }
-        
+
         .footer-container {
             display: flex;
             flex-wrap: wrap;
@@ -768,6 +822,16 @@
                 display: none;
             }
 
+            .sac img{
+                width: 50vm;
+                border-radius: 50%;
+            }
+            
+            .sac{
+                margin-top: 0;
+                margin-bottom: auto;
+            }
+
             .backdrop img {
                 width: 90vw;
             }
@@ -776,16 +840,23 @@
                 margin-top: 0;
                 margin-bottom: 5vh;
             }
+            .left-nav {
+                display: flex;
+                align-items: center;
+                font-family: 'Impact Regular';
+            }
         }
 
         .backdrop {
             margin-top: 0;
             backdrop-filter: drop-shadow(100px 100px 10px yellow);
         }
-        .main-banner{
+
+        .main-banner {
             padding-top: 20vh;
         }
-        footer{
+
+        footer {
             padding-top: 0;
         }
     </style>
@@ -830,8 +901,10 @@
                     <div class="col-12">
                         <nav class="main-nav">
                             <!-- ***** Logo Start ***** -->
-                            <img id="imgOne" src="./assets/images/mits.png" alt="logo">
-                            <img id="imgTwo" src="./assets/images/mits_25yrs.png" style="margin-left: 3rem;">
+                            <div class="left-nav">
+                                <img id="imgOne" src="./assets/images/mits_nav.jpg" alt="logo">
+                                <img id="imgTwo" src="./assets/images/mits_25yrs.png">
+                            </div>
                             <!-- ***** Logo End ***** -->
                             <!-- ***** Menu Start ***** -->
                             <ul class="nav">
@@ -881,6 +954,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="main-content">
+                        <div class="sac">
+                        <img src="./assets/images/sac.jpg" alt=""> </div>
                         <div class="backdrop">
                             <img src="assets/images/logo2.png" alt="home" class="responsive-img">
                         </div>
@@ -948,6 +1023,15 @@
         </div>
     </div>
 
+    <br>
+    <div class="poster">
+        <div class="container">
+        <h2 class="section-title">Poster</h2>
+        <img src="assets/images/poster.jpg" alt="poster" srcset="">
+        </div>
+    </div>
+    <br>
+    <br>
     <!-- *** Technical Events Section *** -->
     <div class="technical-events" id="technical">
         <div class="container">
@@ -1062,8 +1146,7 @@
                             <h4>Insta Flick</h4>
                             <p>A short film contest revealing budding filmmakers.</p>
                             <br>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEtusspdqmLuA6J1tx5ylFX6G6t0heNtw5VHzPiwHgJv6xbA/viewform"
-                                target="_blank">Register Now</a>
+                            <a href="#" target="_blank">Register Now</a>
                         </div>
                     </div>
                 </div>
@@ -1176,7 +1259,7 @@
     <!-- *** Amazing Venus ***-->
     <div class="amazing-venues" id="aboutUs">
         <div class="container" style="background-color: rgba(0,0,0,0.082); padding: 5%;">
-            <!-- <center><img src="assets/images/ashv.jpg" class="poster"></center><br><br> -->
+            <!-- <center><img src="assets/images/freshers.jpg" class="poster"></center><br><br> -->
             <div class="row">
                 <div class="col-lg">
                     <div class="left-content">
@@ -1205,7 +1288,7 @@
             </div>
         </div>
     </div>
-    <h2 class="section-title">Our Team</h2>
+    <h2 class="section-title">Organizers</h2>
     <div class="footer-container">
         <div class="footer-item">
             <h4>Chief Patron</h4>
