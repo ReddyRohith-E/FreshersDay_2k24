@@ -24,6 +24,12 @@
     <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
 
     <style>
+        @font-face {
+    font-family: 'Impact Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Impact Regular'), url('./assets/fonts/impact-webfont/impact.woff'), format('woff');
+    }
         html {
             scroll-behavior: smooth;
         }
@@ -121,7 +127,7 @@
 
         .main-nav .nav li a:hover {
             color: #ff6b6b;
-            
+
         }
 
         .main-nav .nav li {
@@ -282,7 +288,8 @@
 
         @media screen and (max-width: 768px) {
             .event-date {
-                font-size: 1.5rem; /* Adjust font size for mobile */
+                font-size: 1.5rem;
+                /* Adjust font size for mobile */
             }
         }
 
@@ -675,14 +682,16 @@
                 transform: scale(1);
             }
         }
-        .buttons{
+
+        .buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
             margin-top: 2rem;
-            
+
         }
-        .buttons a{
+
+        .buttons a {
             background-color: #00000072;
             color: white;
             padding: 0.5rem;
@@ -690,38 +699,111 @@
             text-decoration: none;
             font-weight: bold;
         }
+
         .created-by {
-        position: absolute;
-        bottom: 2rem;
-        text-align: center;
-    }
-
-    .created-by p {
-        margin: 0;
-        font-size: 1rem;
-        color: white;
-    }
-
-    .creator-logo {
-        width: 70px;
-        height: auto;
-        margin-top: 10px;
-        border-radius: 50%;
-    }
-    @media screen and (max-width: 768px) {
-        .created-by {
-           bottom: 8rem;
+            position: absolute;
+            bottom: 2rem;
+            text-align: center;
         }
-        .creator-logo{
-            width: 40px;
+
+        .created-by p {
+            margin: 0;
+            font-size: 1rem;
+            color: white;
+        }
+
+        .creator-logo {
+            width: 70px;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .created-by {
+                bottom: 8rem;
+            }
+
+            .creator-logo {
+                width: 40px;
+            }
 
         }
-        
-    }
-    .thumb{
-        height: 200px;
-        overflow: hidden;
-    }
+
+        .thumb {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .banner-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #7B2929;
+            padding: 20px;
+            color: #FFC947;
+            text-align: center;
+        }
+
+        .left-logo img,
+        .right-logo img {
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .banner-text {
+            max-width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .banner-text h1 {
+            font-family: 'Impact Regular', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .banner-text p {
+            /* margin: 5px 0; */
+            font-size: 0.95em;
+            color: #FFC947;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #7B2929;
+            padding: 20px;
+            color: #FFC947;
+            text-align: center;
+        }
+
+        .footer-item h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: 800;
+        }
+
+        .footer-item p {
+            margin: 5px 0;
+            color: #FFC947;
+        }
+
+        @media screen and (max-width:600px) {
+            .left-logo img {
+                height: 70px;
+            }
+
+            .banner-text h1 {
+                font-size: 1.2em;
+            }
+
+            .banner-text p {
+                display: none;
+            }
+        }
     </style>
 
 </head>
@@ -759,29 +841,19 @@
     <!-- ***** Header Area Start ***** -->
     <section id="nav">
         <header class="header-area header-sticky">
-            <div class="contain">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="main-nav">
-                            <!-- ***** Logo Start ***** -->
-                            <img id="imgOne" src="./assets/images/mits.png" alt="logo">
-                            <img id="imgTwo" src="./assets//images//SAC.jpg" style="margin-left: 3rem;">
-                            <!-- ***** Logo End ***** -->
-                            <!-- ***** Menu Start ***** -->
-                            <ul class="nav">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#aboutUs">About Us</a></li>
-                                <li><a href="#technical">Technical Events</a></li>
-                                <li><a href="#cultural">Culturals</a></li>
-                                <li><a href="#sports">Sports</a></li>
-                                <li><a href="#contact">Contact us</a></li>
-                            </ul>
-                            <a class='menu-trigger'>
-                                <span>Menu</span>
-                            </a>
-                            <!-- ***** Menu End ***** -->
-                        </nav>
-                    </div>
+            <div class="banner-container">
+                <div class="left-logo">
+                    <img src="./assets/images/mits_logo.jpg" alt="mits logo" />
+                </div>
+                <div class="banner-text">
+                    <h1>MADANAPALLE INSTITUTE OF TECHNOLOGY & SCIENCE</h1>
+                    <p>Affiliated to JNTUA, Ananthapuramu & Approved by AICTE, New Delhi</p>
+                    <p>NAAC Accredited with A+ Grade; NIRF India Rankings 2021 - Band: 201-300 (Engg.)</p>
+                    <p>NBA Accredited - B.Tech. (CIVIL, CSE, CST, ECE, EEE, MECH), MBA & MCA</p>
+                    <p>Madanapalle-517325, Annamayya (Dt.), Andhra Pradesh, India</p>
+                </div>
+                <div class="right-logo">
+                    <img src="mits25.png" alt="mits25" />
                 </div>
             </div>
         </header>
@@ -822,14 +894,14 @@
                 </div>
             </div>
         </div>
-            <div class="row">
-                <div class="col-lg-12 buttons">
-                    <a href="#technical">Technical</a>
-                    <a href="#cultural">Cultural</a>
-                    <a href="#sports">Sports</a>
-                </div>
+        <div class="row">
+            <div class="col-lg-12 buttons">
+                <a href="#technical">Technical</a>
+                <a href="#cultural">Cultural</a>
+                <a href="#sports">Sports</a>
             </div>
         </div>
+    </div>
     </div>
     <!-- ***** Main Banner Area End ***** -->
     <div class="teaser">
@@ -887,8 +959,8 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="event-item" data-title="MITS Trivia"
-                    data-description="A thrilling quiz competition testing knowledge across various fields."
-                    data-image="assets/images/quiz.jpg" data-link="https://forms.gle/Hi9sekT2mHrbdPA89">
+                        data-description="A thrilling quiz competition testing knowledge across various fields."
+                        data-image="assets/images/quiz.jpg" data-link="https://forms.gle/Hi9sekT2mHrbdPA89">
                         <div class="thumb">
                             <img src="assets/images/quiz.jpg" alt="Tech Event 1">
                         </div>
@@ -910,67 +982,67 @@
             <h2 class="section-title">Cultural Events</h2>
             <div class="row">
                 <div class="col-lg-4">
-                        <div class="event-item" data-title="Beat Bash"
-                            data-description="A pulsating dance-off that gets everyone grooving."
-                            data-image="assets/images/beatbash.jpg" data-link="https://forms.gle/vcVCRH8tCHYWcZDM6">
-                            <div class="thumb">
-                                <img src="assets/images/beatbash.jpg" alt="Cultural Event 1">
-                            </div>
-                            <div class="down-content">
-                                <h4>Beat Bash</h4>
-                                <p>A pulsating dance-off that gets everyone grooving.</p><br>
-                                <a href="https://forms.gle/vcVCRH8tCHYWcZDM6" target="_blank">Register Now</a>
-                            </div>
+                    <div class="event-item" data-title="Beat Bash"
+                        data-description="A pulsating dance-off that gets everyone grooving."
+                        data-image="assets/images/beatbash.jpg" data-link="https://forms.gle/vcVCRH8tCHYWcZDM6">
+                        <div class="thumb">
+                            <img src="assets/images/beatbash.jpg" alt="Cultural Event 1">
                         </div>
+                        <div class="down-content">
+                            <h4>Beat Bash</h4>
+                            <p>A pulsating dance-off that gets everyone grooving.</p><br>
+                            <a href="https://forms.gle/vcVCRH8tCHYWcZDM6" target="_blank">Register Now</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                        <div class="event-item" data-title="Melody Madness"
+                    <div class="event-item" data-title="Melody Madness"
                         data-description="A music fest showcasing extraordinary vocal talents."
                         data-image="assets/images/music.jpg" data-link="https://forms.gle/mmWgBW5ZoW1wtzSk7">
-                            <div class="thumb"><img src="assets/images/music.jpg" alt="Cultural Event 2">
-                            </div>
-                            <div class="down-content">
-                                <h4>Melody Madness</h4>
-                                <p>A music fest showcasing extraordinary vocal talents.</p><br>
-                                <a href="https://forms.gle/mmWgBW5ZoW1wtzSk7" target="_blank">Register Now</a>
-                            </div>
+                        <div class="thumb"><img src="assets/images/music.jpg" alt="Cultural Event 2">
                         </div>
+                        <div class="down-content">
+                            <h4>Melody Madness</h4>
+                            <p>A music fest showcasing extraordinary vocal talents.</p><br>
+                            <a href="https://forms.gle/mmWgBW5ZoW1wtzSk7" target="_blank">Register Now</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                        <div class="event-item" data-title="Drama Delites"
+                    <div class="event-item" data-title="Drama Delites"
                         data-description="Captivating stage performances that leave the audience spellbound."
                         data-image="assets/images/drama.jpg" data-link="https://forms.gle/itSHbBLaPdje8oLo8">
-                            <div class="thumb">
-                                <img src="assets/images/drama.jpg" alt="Cultural Event 3">
-                            </div>
-                            <div class="down-content">
-                                <h4>Drama Delites</h4>
-                                <p>Captivating stage performances that leave the audience spellbound.</p><br>
-                                <a href="https://forms.gle/itSHbBLaPdje8oLo8" target="_blank">Register Now</a>
-                            </div>
+                        <div class="thumb">
+                            <img src="assets/images/drama.jpg" alt="Cultural Event 3">
                         </div>
+                        <div class="down-content">
+                            <h4>Drama Delites</h4>
+                            <p>Captivating stage performances that leave the audience spellbound.</p><br>
+                            <a href="https://forms.gle/itSHbBLaPdje8oLo8" target="_blank">Register Now</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    
-                        <div class="event-item" data-title="Fashion Fanatics"
-                        data-description="Watch captivating plays performed by
-                        talented actors."
-                        data-image="assets/images/fashion.jpg" data-link="https://forms.gle/RGapXDjPrhPA11Ae8">
-                            <div class="thumb">
-                                <img src="assets/images/fashion.jpg" alt="Cultural Event 3">
-                            </div>
-                            <div class="down-content">
-                                <h4>Fashion Fanatics</h4>
-                                <p>A glamorous runway event flaunting cutting-edge styles.</p>
-                                    <br>
-                                <a href="https://forms.gle/RGapXDjPrhPA11Ae8" target="_blank">Register Now</a>
-                            </div>
+
+                    <div class="event-item" data-title="Fashion Fanatics" data-description="Watch captivating plays performed by
+                        talented actors." data-image="assets/images/fashion.jpg"
+                        data-link="https://forms.gle/RGapXDjPrhPA11Ae8">
+                        <div class="thumb">
+                            <img src="assets/images/fashion.jpg" alt="Cultural Event 3">
                         </div>
+                        <div class="down-content">
+                            <h4>Fashion Fanatics</h4>
+                            <p>A glamorous runway event flaunting cutting-edge styles.</p>
+                            <br>
+                            <a href="https://forms.gle/RGapXDjPrhPA11Ae8" target="_blank">Register Now</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="event-item" data-title="Artistry"
-                    data-description="An exhibition celebrating the creative works of student artists."
-                    data-image="assets/images/art.jpg" data-link="https://docs.google.com/forms/d/e/1FAIpQLSdEtusspdqmLuA6J1tx5ylFX6G6t0heNtw5VHzPiwHgJv6xbA/viewform">
+                        data-description="An exhibition celebrating the creative works of student artists."
+                        data-image="assets/images/art.jpg"
+                        data-link="https://docs.google.com/forms/d/e/1FAIpQLSdEtusspdqmLuA6J1tx5ylFX6G6t0heNtw5VHzPiwHgJv6xbA/viewform">
                         <div class="thumb">
                             <img src="assets/images/art.jpg" alt="Cultural Event 3">
                         </div>
@@ -978,14 +1050,15 @@
                             <h4>Artistry</h4>
                             <p>An exhibition celebrating the creative works of student artists.</p>
                             <br>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEtusspdqmLuA6J1tx5ylFX6G6t0heNtw5VHzPiwHgJv6xbA/viewform" target="_blank">Register Now</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEtusspdqmLuA6J1tx5ylFX6G6t0heNtw5VHzPiwHgJv6xbA/viewform"
+                                target="_blank">Register Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="event-item" data-title="InstaFlick"
-                    data-description="Watch captivating plays performed by talented actors."
-                    data-image="assets/images/art.jpg" data-link="#">
+                        data-description="Watch captivating plays performed by talented actors."
+                        data-image="assets/images/art.jpg" data-link="#">
                         <div class="thumb">
                             <img src="assets/images/instaflx.jpg" alt="Cultural Event 3">
                         </div>
@@ -993,7 +1066,8 @@
                             <h4>Insta Flick</h4>
                             <p>A short film contest revealing budding filmmakers.</p>
                             <br>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEtusspdqmLuA6J1tx5ylFX6G6t0heNtw5VHzPiwHgJv6xbA/viewform" target="_blank">Register Now</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEtusspdqmLuA6J1tx5ylFX6G6t0heNtw5VHzPiwHgJv6xbA/viewform"
+                                target="_blank">Register Now</a>
                         </div>
                     </div>
                 </div>
@@ -1009,43 +1083,46 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="event-item" data-title="Cricket (Girls)"
-                    data-description="Boundary hits and strategic bowling exemplify exceptional talent and teamwork." data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
+                        data-description="Boundary hits and strategic bowling exemplify exceptional talent and teamwork."
+                        data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
                         <div class="thumb">
                             <a href=" "><img src="assets/images/cricket.jpg" alt="Sports Event 1"></a>
                         </div>
                         <div class="down-content">
-                                <h4>Cricket (Girls)</h4>
+                            <h4>Cricket (Girls)</h4>
                             <p>Boundary hits and strategic bowling exemplify exceptional talent and teamwork.</p>
                             <br>
-                                <a href="https://forms.gle/C4T1vBLUjX7cQXyH9" target="_blank">Register Now</a>
+                            <a href="https://forms.gle/C4T1vBLUjX7cQXyH9" target="_blank">Register Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="event-item" data-title="Throw Ball (Girls)"
-                    data-description="Precision serves and agile reflexes highlight the competitive edge of the players." data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
+                        data-description="Precision serves and agile reflexes highlight the competitive edge of the players."
+                        data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
                         <div class="thumb">
                             <a href=" "><img src="assets/images/throwball.jpg" alt="Sports Event 1"></a>
                         </div>
                         <div class="down-content">
-                                <h4>Throw ball (Girls)</h4>
+                            <h4>Throw ball (Girls)</h4>
                             <p>Precision serves and agile reflexes highlight the competitive edge of the players.</p>
                             <br>
-                                <a href="https://forms.gle/C4T1vBLUjX7cQXyH9" target="_blank">Register Now</a>
+                            <a href="https://forms.gle/C4T1vBLUjX7cQXyH9" target="_blank">Register Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="event-item"  data-title="Volley Ball (Boys)"
-                    data-description="Intense spike-offs and strategic serves dominate the court in this high-energy game." data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
+                    <div class="event-item" data-title="Volley Ball (Boys)"
+                        data-description="Intense spike-offs and strategic serves dominate the court in this high-energy game."
+                        data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
                         <div class="thumb">
                             <a href=" "><img src="assets/images/volleyball.jpg" alt="Sports Event 1"></a>
                         </div>
                         <div class="down-content">
-                                <h4>Volley Ball (Boys)</h4>
+                            <h4>Volley Ball (Boys)</h4>
                             <p>Intense spike-offs and strategic serves dominate the court in this high-energy game.</p>
                             <br>
-                                <a href="https://forms.gle/C4T1vBLUjX7cQXyH9" target="_blank">Register Now</a>
+                            <a href="https://forms.gle/C4T1vBLUjX7cQXyH9" target="_blank">Register Now</a>
                         </div>
                     </div>
                 </div>
@@ -1053,15 +1130,16 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="event-item" data-title="Hand Ball (Boys)"
-                    data-description="Fast-paced dribbling and powerful throws make for thrilling matches." data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
+                        data-description="Fast-paced dribbling and powerful throws make for thrilling matches."
+                        data-link="https://forms.gle/C4T1vBLUjX7cQXyH9">
                         <div class="thumb">
                             <a href=" "><img src="assets/images/handball.jpg" alt="Sports Event 1"></a>
                         </div>
                         <div class="down-content">
-                                <h4>Hand Ball (Boys)</h4>
+                            <h4>Hand Ball (Boys)</h4>
                             <p>Fast-paced dribbling and powerful throws make for thrilling matches.</p>
                             <br>
-                                <a href="https://forms.gle/C4T1vBLUjX7cQXyH9" target="_blank">Register Now</a>
+                            <a href="https://forms.gle/C4T1vBLUjX7cQXyH9" target="_blank">Register Now</a>
                         </div>
                     </div>
                 </div>
@@ -1069,7 +1147,7 @@
         </div>
     </div>
 
-     <!-- *** Owl Carousel Items ***-->
+    <!-- *** Owl Carousel Items ***-->
     <div class="show-events-carousel">
         <h2 class="section-title" style="padding: 1rem;">Gallery</h2>
         <div class="container" style="margin-top: 9%;">
@@ -1158,18 +1236,61 @@
                 <div class="col-lg">
                     <div class="left-content">
                         <h4>About <i>SWAGATH 2024</i></h4>
-                        <p style="font-weight: bold; color: rgb(12, 106, 117);"><i>SWAGATH 2024</i> - Ignite the Spark</p>
-                        <p style="text-align: justify;">Welcome to <i>SWAGATH 2024</i> at MITS College, Madanapalle! This event is crafted to ignite excitement and foster camaraderie among our newest academic members. We're here to celebrate the arrival of our <i>SWAGATH</i>, ensuring they get a memorable introduction to the vibrant life awaiting them on campus.
+                        <p style="font-weight: bold; color: rgb(12, 106, 117);"><i>SWAGATH 2024</i> - Ignite the Spark
+                        </p>
+                        <p style="text-align: justify;">Welcome to <i>SWAGATH 2024</i> at MITS College, Madanapalle!
+                            This event is crafted to ignite excitement and foster camaraderie among our newest academic
+                            members. We're here to celebrate the arrival of our <i>SWAGATH</i>, ensuring they get a
+                            memorable introduction to the vibrant life awaiting them on campus.
                             <br>
-                            <i>SWAGATH 2024</i> is not just an event; it's a tradition marking the start of an incredible journey at MITS. Our goal is to create a welcoming environment where new students can make friends and build lasting connections. With a variety of activities catering to diverse interests, there's something for everyone.
+                            <i>SWAGATH 2024</i> is not just an event; it's a tradition marking the start of an
+                            incredible journey at MITS. Our goal is to create a welcoming environment where new students
+                            can make friends and build lasting connections. With a variety of activities catering to
+                            diverse interests, there's something for everyone.
                             <br>
-                            The event begins with a grand opening ceremony, featuring inspiring speeches from esteemed faculty members and senior students. This is followed by ice-breaking sessions designed to help our <i>SWAGATH</i> get to know each other in a fun, relaxed setting. These activities not only entertain but also ease the transition into university life at MITS College.
+                            The event begins with a grand opening ceremony, featuring inspiring speeches from esteemed
+                            faculty members and senior students. This is followed by ice-breaking sessions designed to
+                            help our <i>SWAGATH</i> get to know each other in a fun, relaxed setting. These activities
+                            not only entertain but also ease the transition into university life at MITS College.
                             <br>
                             Ready to ignite your spark?
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <h2 class="section-title">Our Team</h2>
+    <div class="footer-container">
+        <div class="footer-item">
+            <h4>Chief Patron</h4>
+            <p>Dr. N. Vijaya Bhaskar Choudary, Ph.D</p>
+            <p>Secretary & Correspondent</p>
+        </div>
+        <div class="footer-item">
+            <h4>Patron</h4>
+            <p>Mrs. Keerthi Nadella</p>
+            <p>Executive Director</p>
+        </div>
+        <div class="footer-item">
+            <h4>Chief Coordinator</h4>
+            <p>Dr. C. Yuvaraj</p>
+            <p>Principal</p>
+        </div>
+        <div class="footer-item">
+            <h4>Coordinator</h4>
+            <p>Dr. G. Reddy Hemantha</p>
+            <p>Assistant Professor</p>
+        </div>
+        <div class="footer-item">
+            <h4>Co-Coordinator</h4>
+            <p>Mr. V. Naveen</p>
+            <p>Assistant Professor</p>
+        </div>
+        <div class="footer-item">
+            <h4>Co-Coordinator</h4>
+            <p>Mr. B. S. H. Shayeez Ahamed</p>
+            <p>Assistant Professor</p>
         </div>
     </div>
 
@@ -1376,4 +1497,5 @@
         // })
     </script>
 </body>
+
 </html>
