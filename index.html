@@ -975,7 +975,7 @@
     </div>
     <!-- ***** Main Banner Area End ***** -->
     <div class="teaser">
-        <video src="./assets/images/teaser.mp4" autoplay muted loop controls></video>
+        <video src="" id="teaserVideo" autoplay muted loop controls></video>
     </div>
     <br><br>
     <!-- *** Events Timeline *** -->
@@ -1241,35 +1241,35 @@
     </div>
 
     <!-- *** Owl Carousel Items ***-->
-    <!-- <div class="show-events-carousel">
+    <div class="show-events-carousel">
         <h2 class="section-title" style="padding: 1rem;">Gallery</h2>
         <div class="container" style="margin-top: 9%;">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="owl-show-events owl-carousel">
                         <div class="item">
-                            <a href=" "><img src="assets/images/prev_freshers/f1.JPG" alt="image 1"></a>
+                            <a href=" "><img src="" data-image="assets/images/prev_freshers/f1.JPG" class="gallery-image" alt="image 1"></a>
                         </div>
                         <div class="item">
-                            <a href=" "><img src="assets/images/prev_freshers/f2.JPG" alt="image 2"></a>
+                            <a href=" "><img src="" data-image="assets/images/prev_freshers/f2.JPG" class="gallery-image" alt="image 2"></a>
                         </div>
                         <div class="item">
-                            <a href=" "><img src="assets/images/prev_freshers/f3.JPG" alt="image 3"></a>
+                            <a href=" "><img src="" data-image="assets/images/prev_freshers/f3.JPG" class="gallery-image" alt="image 3"></a>
                         </div>
                         <div class="item">
-                            <a href=" "><img src="assets/images/prev_freshers/f4.JPG" alt="image 4"></a>
+                            <a href=" "><img src="" data-image="assets/images/prev_freshers/f4.JPG" class="gallery-image" alt="image 4"></a>
                         </div>
                         <div class="item">
-                            <a href=" "><img src="assets/images/prev_freshers/f5.JPG" alt="image 5"></a>
+                            <a href=" "><img src="" data-image="assets/images/prev_freshers/f5.JPG" class="gallery-image" alt="image 5"></a>
                         </div>
                         <div class="item">
-                            <a href=" "><img src="assets/images/prev_freshers/f6.JPG" alt="image 6"></a>
+                            <a href=" "><img src="" data-image="assets/images/prev_freshers/f6.JPG" class="gallery-image" alt="image 6"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- *** Amazing Venus ***-->
     <div class="amazing-venues" id="aboutUs">
         <div class="container" style="background-color: rgba(0,0,0,0.082); padding: 5%;">
@@ -1433,7 +1433,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             let lastScrollTop = 0;
             const counterContent = document.querySelector('.counter-content');
-
+            
             window.addEventListener('scroll', function () {
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 if (scrollTop > lastScrollTop) {
@@ -1444,8 +1444,7 @@
                     counterContent.style.transform = 'translate(-50%, 0)';
                 }
                 lastScrollTop = scrollTop;
-            });
-
+            });            
             // Function to update counter values with smooth scroll effect
             function updateCounter(id, value) {
                 const element = document.getElementById(id);
@@ -1511,6 +1510,10 @@
                 var preloader = document.querySelector('.rl-loading-container');
                 preloader.style.display = 'none';
             }, 500);
+            document.querySelector('#teaserVideo').src = "./assets/images/teaser.mp4";
+            document.querySelectorAll('.gallery-image').forEach((image) => {
+                image.src = image.dataset.image
+            })
         });
         document.querySelectorAll(".event-item").forEach(function (item) {
             item.addEventListener("click", function () {
