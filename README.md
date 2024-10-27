@@ -70,8 +70,6 @@ Open the `index.html` file in your web browser to view the website locally. You 
 
 ## Contributing
 
-## Contributing
-
 We welcome contributions! Our team is excited to collaborate with you. Please contact us for more details.
 
 ## License
