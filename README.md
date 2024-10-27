@@ -47,8 +47,7 @@ FreshersDay_2k24/
     - `css/`: Stylesheets for the website.
     - `images/`: Images used in the website.
     - `js/`: JavaScript files for interactive features.
-- `pages/`: HTML files for different sections of the website.
-    - `index.html`: The homepage that includes all the features such as event schedule, online registration, photo gallery, and contact information.
+- `index.html`: The homepage that includes all the features such as event schedule, online registration, photo gallery, and contact information.
 - `README.md`: This file.
 - `LICENSE`: License information.
 
