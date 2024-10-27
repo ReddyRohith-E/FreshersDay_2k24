@@ -38,8 +38,7 @@ FreshersDay_2k24/
 │   ├── css/
 │   ├── images/
 │   └── js/
-├── pages/
-│   ├── index.html
+├── index.html
 ├── README.md
 └── LICENSE
 ```
