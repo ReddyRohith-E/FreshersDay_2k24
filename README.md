@@ -19,7 +19,7 @@ SWAGATH 2024 is an event designed to welcome the new batch of students at MITS C
 
 ## Public URL
 
-You can access the live website at [https://swagath-2k24.netlify.app](https://swagath-2k24.netlify.app).
+You can access the live website at [https://swagath-2k24.netlify.app](https://swagath-2k24.netlify.app) .
 
 ## Features
 
@@ -38,6 +38,7 @@ FreshersDay_2k24/
 │   ├── css/
 │   ├── images/
 │   └── js/
+├── cretors.html
 ├── index.html
 ├── README.md
 └── LICENSE
@@ -47,6 +48,7 @@ FreshersDay_2k24/
     - `css/`: Stylesheets for the website.
     - `images/`: Images used in the website.
     - `js/`: JavaScript files for interactive features.
+- `creators.html`: The creators.html file is a webpage that showcases the developers of the "SWAGATH 2024" project, featuring their names, class details, and links to their LinkedIn and GitHub profiles.
 - `index.html`: The homepage that includes all the features such as event schedule, online registration, photo gallery, and contact information.
 - `README.md`: This file.
 - `LICENSE`: License information.
