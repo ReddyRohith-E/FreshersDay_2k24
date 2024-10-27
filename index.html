@@ -193,7 +193,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: var(--mb-4);
+            /* margin-bottom: var(--mb-4); */
+            margin-bottom: 30px;
         }
 
         .social-item {
@@ -542,7 +543,7 @@
         .section-title {
             text-align: center;
             font-size: 2.5rem;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             color: var(--primary-color, #333);
         }
 
@@ -862,6 +863,36 @@
 
         footer {
             padding-top: 0;
+        }
+
+        .meet-creators-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #007bff;
+            background-color: #f4f4f9;
+            text-decoration: none;
+            border-radius: 30px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .meet-creators-button .arrow {
+            margin-left: 8px;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .meet-creators-button:hover {
+            color: #007bff;
+            background-color: transparent;
+            border: 2px solid #007bff;
+        }
+
+        .meet-creators-button:hover .arrow {
+            transform: translateX(5px); /* Slightly move the arrow to the right on hover */
         }
     </style>
 
@@ -1407,6 +1438,10 @@
                     <span class="social-name">whatsapp</span>
                 </a>
             </div>
+        </div>
+        <div class="craetors-content">
+            <!-- Other footer content here -->
+            <a href="creators.html" class="meet-creators-button">Meet the Developers<span class="arrow">→</span></a>
         </div>
     </footer>
     <div class="arrow">
