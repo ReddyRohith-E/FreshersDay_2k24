@@ -892,13 +892,47 @@
         }
 
         .meet-creators-button:hover .arrow {
-            transform: translateX(5px); /* Slightly move the arrow to the right on hover */
+            transform: translateX(5px);
+            /* Slightly move the arrow to the right on hover */
+        }
+
+        .banner {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            /* Green */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 100000;
+            transition: 200ms all ease-in-out;
+            /* Ensure it is on top */
+        }
+
+
+        .banner-text {
+            margin-right: 20px;
+        }
+
+        .banner-close {
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
         }
     </style>
 
 </head>
 
 <body>
+    <div id="banner" class="banner">
+        <span class="banner-text">Freshers Day Banner drop will be on 07-102024 04:45PM</span>
+        <span class="banner-close" onclick="closeBanner()">&times;</span>
+    </div>
     <div class="rl-loading-container">
         <div class="rl-loading-thumb rl-loading-thumb-1"></div>
         <div class="rl-loading-thumb rl-loading-thumb-2"></div>
@@ -1441,7 +1475,8 @@
         </div>
         <div class="creators-content">
             <!-- Other footer content here -->
-            <a href="creators.html" class="meet-creators-button" target="_blank">Meet the Developers <span class="arrow">→</span></a>
+            <a href="creators.html" class="meet-creators-button" target="_blank">Meet the Developers <span
+                    class="arrow">→</span></a>
         </div>
     </footer>
     <div class="arrow">
@@ -1456,6 +1491,21 @@
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+
+    <script>
+        function showBanner() {
+            document.getElementById('banner').style.display = 'block';
+            setTimeout(closeBanner, 3000);
+        }
+
+        function closeBanner() {
+            document.getElementById('banner').style.transform = 'translateX(150%)';
+            // document.getElementById('banner').style.display = 'none';
+        }
+
+        // Example: Show the banner after 3 seconds
+        setTimeout(showBanner, 3000);
+    </script>
     <script>
         // Get the modal
         var modal = document.getElementById("eventModal");
